@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+
+public class HistoryAndGovernmentQuiz {
+public static void main(String args[]) {
+    askingQuestion ();
+    
+}
+
+    public static void askingQuestion () {
+        //uses keyboard for input
+        Scanner kboard = new Scanner(System.in);
+    
+//Introduction
+System.out.println("Hello! Welcome to the History/Government Quiz.");
+System.out.println("Here you will gain some knowledge about the US History and Government");
+System.out.println("Press enter to continue");
+try{System.in.read();}
+            catch(Exception e) {
+                //declare vaiables
+int score = 0;                
+String q1 = "What place is the residence and workplace of the president of the US?";
+String a1 = "White House";
+String h1 = "starts with W";
+
+System.out.println(q1);
+int answer1 = kboard.nextLine();
+if (answer1.equalsIgnoreCase(a1)) {
+    System.out.println("Correct");
+    score += 10;
+}
+
+else if (!answer1.equalsIgnoreCase(a1)) {
+    System.out.println("Incorrect");
+    System.out.println("Try again with "h1);
+}
+
+else {
+   System.out.println("Incorrect"); 
+}
+    
+                
+                
+                
+                
+            }
+
+
+    }
+}
