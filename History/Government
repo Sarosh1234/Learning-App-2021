@@ -2,7 +2,101 @@ import java.util.Scanner;
 
 
 public class HistoryAndGovernmentQuiz {
+public static void main(String args[]) {import java.util.Scanner;
+
+
+public class HistoryAndGovernmentQuiz {
 public static void main(String args[]) {
+    askingQuestion ();
+    
+}
+
+    public static void askingQuestion () {
+        //uses keyboard for input
+        Scanner kboard = new Scanner(System.in);
+    
+//Introduction
+System.out.println("Hello! Welcome to the History/Government Quiz.");
+System.out.println("Here you will gain some knowledge about the US History and Government");
+
+
+System.out.println("\nPlease enter p to continue");
+String start = kboard.nextLine();
+if (start.equalsIgnoreCase("p")) {
+    
+
+//declare vaiables
+
+
+
+int score = 0;
+String q1 = "1.Shirley Chisholm became the first Black woman elected to the U.S. Congress in what year?\n"
+          + "a.1965\nb.1972"; //answer is b
+String q2 = "2.Which of these countries did the Soviet Union NEVER invade?\n"
+          + "a.Sweden\nb.Finland"; //answer is a
+String q3 = "3.What city was the first capital of the United States?\n"
+          + "a.Washington, D.C.\nb.New York City"; //answer is b
+String q4 = "4.When was the first U.S. dollar printed?\n"
+          + "a.1976, D.C.\nb.1862"; //answer is b
+          
+System.out.println(q1);
+String answer1 = kboard.nextLine();
+if (answer1.equalsIgnoreCase("b")) {
+    score += 10;
+System.out.println("Good Job");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q2);
+String answer2 = kboard.nextLine();
+if (answer2.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Good Job");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q3);
+String answer3 = kboard.nextLine();
+if (answer3.equalsIgnoreCase("b")) {
+    score += 10;
+System.out.println("Good Job");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q4);
+String answer3 = kboard.nextLine();
+if (answer3.equalsIgnoreCase("b")) {
+    score += 10;
+System.out.println("Good Job");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+
+
+          
+
+
+    
+    }
+    else {
+        System.out.println("\nInvalid" + "\n\nRestart the app");
+    }
+}
+
+}
+
     askingQuestion ();
     
 }
