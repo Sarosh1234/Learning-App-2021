@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 
 public class HistoryAndGovernmentQuiz {
-public static void main(String args[]) {import java.util.Scanner;
-
-
-public class HistoryAndGovernmentQuiz {
 public static void main(String args[]) {
     askingQuestion ();
     
@@ -38,12 +34,28 @@ String q3 = "3.What city was the first capital of the United States?\n"
           + "a.Washington, D.C.\nb.New York City"; //answer is b
 String q4 = "4.When was the first U.S. dollar printed?\n"
           + "a.1976, D.C.\nb.1862"; //answer is b
+String q5 = "5.When did the Revolutionary War end?\n"
+          + "a.Sept.3,1783\nb.Nov.3,1785"; //answer is a
+String q6 = "6.Where was the Constitutional Convention held?\n"
+          + "a.Philadelphia\nb.Connecticut"; //answer is a
+String q7 = "7.Who was the first president to declare war?\n"
+          + "a.Woodrow Wilson\nb.Franklin D. Roosevelt"; //answer is a
+String q8 = "8.What country gifted the United States with the Statue of Liberty?\n"
+          + "a.France\nb.Italy"; //answer is a
+String q9 = "9.What country gifted the United States with the Statue of Liberty?\n"
+          + "a.France\nb.Italy"; //answer is a
+String q10 = "10.When did the American Civil War end?\n"
+          + "a.April 9, 1865\nb.May 9, 1865"; //answer is b
+
+
+
+
           
 System.out.println(q1);
 String answer1 = kboard.nextLine();
 if (answer1.equalsIgnoreCase("b")) {
     score += 10;
-System.out.println("Good Job");
+System.out.println("Correct");
 }
 
 else {
@@ -54,7 +66,7 @@ System.out.println(q2);
 String answer2 = kboard.nextLine();
 if (answer2.equalsIgnoreCase("a")) {
     score += 10;
-System.out.println("Good Job");
+System.out.println("Correct");
 }
 
 else {
@@ -65,7 +77,7 @@ System.out.println(q3);
 String answer3 = kboard.nextLine();
 if (answer3.equalsIgnoreCase("b")) {
     score += 10;
-System.out.println("Good Job");
+System.out.println("Correct");
 }
 
 else {
@@ -73,15 +85,84 @@ else {
 }
 
 System.out.println(q4);
-String answer3 = kboard.nextLine();
-if (answer3.equalsIgnoreCase("b")) {
+String answer4 = kboard.nextLine();
+if (answer4.equalsIgnoreCase("b")) {
     score += 10;
-System.out.println("Good Job");
+System.out.println("Correct");
 }
 
 else {
     System.out.println("Incorrect");    
 }
+
+System.out.println(q5);
+String answer5 = kboard.nextLine();
+if (answer5.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q6);
+String answer6 = kboard.nextLine();
+if (answer6.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q7);
+String answer7 = kboard.nextLine();
+if (answer7.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q8);
+String answer8 = kboard.nextLine();
+if (answer8.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q9);
+String answer9 = kboard.nextLine();
+if (answer9.equalsIgnoreCase("a")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println(q10);
+String answer10 = kboard.nextLine();
+if (answer10.equalsIgnoreCase("b")) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+
+System.out.println("Your score is "+score);
+
 
 
 
@@ -95,50 +176,4 @@ else {
     }
 }
 
-}
-
-    askingQuestion ();
-    
-}
-
-    public static void askingQuestion () {
-        //uses keyboard for input
-        Scanner kboard = new Scanner(System.in);
-    
-//Introduction
-System.out.println("Hello! Welcome to the History/Government Quiz.");
-System.out.println("Here you will gain some knowledge about the US History and Government");
-System.out.println("Press enter to continue");
-try{System.in.read();}
-            catch(Exception e) {
-                //declare vaiables
-int score = 0;                
-String q1 = "What place is the residence and workplace of the president of the US?";
-String a1 = "White House";
-String h1 = "starts with W";
-
-System.out.println(q1);
-int answer1 = kboard.nextLine();
-if (answer1.equalsIgnoreCase(a1)) {
-    System.out.println("Correct");
-    score += 10;
-}
-
-else if (!answer1.equalsIgnoreCase(a1)) {
-    System.out.println("Incorrect");
-    System.out.println("Try again with "h1);
-}
-
-else {
-   System.out.println("Incorrect"); 
-}
-    
-                
-                
-                
-                
-            }
-
-
-    }
 }
