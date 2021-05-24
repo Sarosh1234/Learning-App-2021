@@ -169,7 +169,10 @@ System.out.println("Your score is "+score);
 
 else if (option.equalsIgnoreCase("b")) {
 int score = 0;
-String q1 = 
+String q1 = "1.What's the most popular sport people watch or play?\n"
+          + "a.Soccer\nb.Basketball"; //answer is a
+          
+          
 }
 
 
