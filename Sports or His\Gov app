@@ -1,0 +1,121 @@
+import java.util.Scanner;
+
+
+public class HistoryAndGovernmentQuiz {
+public static void main(String args[]) {
+    askingQuestion ();
+    
+}
+
+    public static void askingQuestion () {
+        //uses keyboard for input
+        Scanner kboard = new Scanner(System.in);
+    
+//Introduction
+System.out.println("Hello! Welcome to the Quiz App.");
+System.out.println("Here you will gain some knowledge about the US History and Government");
+
+
+System.out.println("\nPlease enter p to continue");
+String start = kboard.nextLine();
+if (start.equalsIgnoreCase("p")) {
+    
+System.out.println("\nChoose one option ");
+System.out.println("\na.History Trivia\nb.Sports Trivia");
+String option = kboard.nextLine();
+if (option.equalsIgnoreCase("a")) {
+    
+//declare vaiables for the History Trivia
+
+int score = 0;
+String q1 = "1.Shirley Chisholm became the first Black woman elected to the U.S. Congress in what year?\n"
+          + "a.1965\nb.1972"; //answer is b
+String q2 = "2.Which of these countries did the Soviet Union NEVER invade?\n"
+          + "a.Sweden\nb.Finland"; //answer is a
+String q3 = "3.What city was the first capital of the United States?\n"
+          + "a.Washington, D.C.\nb.New York City"; //answer is b
+String q4 = "4.When was the first U.S. dollar printed?\n"
+          + "a.1976, D.C.\nb.1862"; //answer is b
+String q5 = "5.When did the Revolutionary War end?\n"
+          + "a.Sept.3,1783\nb.Nov.3,1785"; //answer is a
+String q6 = "6.Where was the Constitutional Convention held?\n"
+          + "a.Philadelphia\nb.Connecticut"; //answer is a
+String q7 = "7.Who was the first president to declare war?\n"
+          + "a.Woodrow Wilson\nb.Franklin D. Roosevelt"; //answer is a
+String q8 = "8.What country gifted the United States with the Statue of Liberty?\n"
+          + "a.France\nb.Italy"; //answer is a
+String q9 = "9.What country gifted the United States with the Statue of Liberty?\n"
+          + "a.France\nb.Italy"; //answer is a
+String q10 = "10.When did the American Civil War end?\n"
+          + "a.April 9, 1865\nb.May 9, 1865"; //answer is b
+String [] questionsHisGov = {q1,q2,q3,q4,q5,q6,q7,q8,q9,q10};
+String [] answersHisGov = {"b","a","b","b","a","a","a","a","a","b"};
+
+    for (int i = 0; i < questionsHisGov.length; i++) {
+        System.out.println(questionsHisGov[i]);
+String ans = kboard.nextLine();
+if (ans.equalsIgnoreCase(answersHisGov[i])) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+    }
+
+System.out.println("Your score is "+score);
+
+}
+//declare vaiables for the Sports
+else if (option.equalsIgnoreCase("b")) {
+int score = 0;
+String q1 = "1.What's the most popular sport people watch or play?\n"
+          + "a.Soccer\nb.Basketball"; //answer is a
+String q2 = "2.What's the most popular sport people watch or play?\n"
+          + "a.Soccer\nb.Basketball"; //answer is a
+String q3 = "3.Which sport has a record of longest match?\n"
+          + "a.Archery\nb.Tennis"; //answer is b
+String q4 = "4.How many seconds can you hold the ball without dribbling moving passing or shooting?\n"
+          + "a.5 seconds\nb.7 seconds"; //answer is a
+String q5 = "5.What sport other than baseball uses the word ‘home run’?\n"
+          + "a.Volleyball\nb.Cricket"; //answer is b
+String q6 = "6.How many panels make up a soccer ball?\n"
+          + "a.32\nb.35"; //answer is a
+String q7 = "7.How long is a football game?\n"
+          + "a.62 minutes\nb.60 minutes"; //answer is b
+String q8 = "8.In what year did boxing become a legal sport in the US?\n"
+          + "a.1902\nb.1901"; //answer is b
+String q9 = "9.What is the maximum weight for a golf ball?\n"
+          + "a.1.6oz\nb.1.6g"; //answer is a
+String q10 = "10.What is the diameter of the basketball hoop in inches?\n"
+          + "a.18 inches\nb.17 inches"; //answer is a
+
+String [] questionsSport = {q1,q2,q3,q4,q5,q6,q7,q8,q9,q10};
+String [] answersSport = {"a","a","b","a","b","a","b","b","a","a"};
+
+    for (int i = 0; i < questionsSport.length; i++) {
+        System.out.println(questionsSport[i]);
+String ans = kboard.nextLine();
+if (ans.equalsIgnoreCase(answersSport[i])) {
+    score += 10;
+System.out.println("Correct");
+}
+
+else {
+    System.out.println("Incorrect");    
+}
+    }
+
+System.out.println("Your score is "+score);
+
+}
+
+    }
+    else {
+        System.out.println("\nInvalid" + "\n\nRestart the app");
+    }
+    
+}
+
+}
